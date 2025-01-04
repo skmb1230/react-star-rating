@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export interface StarRatingProps {
   maxStars?: number; // 최대 별 개수
-  currentScore: number; // 현재 점수
+  currentScore?: number; // 현재 점수
   size?: number; // 별 크기
   starEmptyColor?: string; // 빈 별 색상
   starFillColor?: string; // 채운 별 색상
@@ -12,7 +12,7 @@ export interface StarRatingProps {
 
 export function StarRating({
   maxStars = 5,
-  currentScore,
+  currentScore = 0,
   size = 24,
   starEmptyColor = "#D2D2D2",
   starFillColor = "#FF501B",
