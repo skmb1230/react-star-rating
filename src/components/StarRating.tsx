@@ -19,7 +19,7 @@ export function StarRating({
   onClick,
   isClickable = true,
 }: StarRatingProps) {
-  const [fillStar, setFillStar] = useState<number>(currentScore);
+  const [fillStar, setFillStar] = useState(currentScore);
 
   useEffect(() => {
     setFillStar(currentScore);

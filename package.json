@@ -1,8 +1,8 @@
 {
-  "name": "react-star-rating",
-  "version": "0.1.0",
+  "name": "react-star-rating-test",
+  "version": "0.1.1",
   "description": "A customizable star rating component for React",
-  "main": "dist/react-star-rating.cjs.js",
+  "main": "dist/react-star-rating.umd.js",
   "module": "dist/react-star-rating.es.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -18,7 +18,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.0.7"
+    "vite": "^6.0.7",
+    "vite-plugin-dts": "^4.4.0"
   },
   "keywords": [
     "react",
