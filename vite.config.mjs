@@ -12,7 +12,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.tsx"), // 라이브러리 진입점 파일
+      entry: path.resolve(__dirname, "src/components/StarRating.tsx"), // 라이브러리 진입점 파일
       name: "ReactStarRating", // UMD 모듈 이름
       fileName: (format) => `react-star-rating.${format}.js`, // 파일 이름
       formats: ["es", "cjs", "umd"], // ES Modules, CommonJS, UMD 포맷 생성

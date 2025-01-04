@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export interface StarRatingProps {
   maxStars?: number; // 최대 별 개수
