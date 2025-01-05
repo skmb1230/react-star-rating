@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     dts({
       insertTypesEntry: true, // `types` 필드에 해당하는 타입 정의 파일 추가
+      rollupTypes: true, // 타입 파일을 하나로 병합
     }),
   ],
   build: {

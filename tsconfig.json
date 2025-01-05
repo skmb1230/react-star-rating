@@ -8,6 +8,6 @@
     "module": "ESNext", // ES 모듈 형식 사용
     "moduleResolution": "node" // Node.js 모듈 해석 방식
   },
-  "include": ["src"], // 타입 정의 파일 생성 대상
+  "include": ["src", "src/main.tsx"], // 타입 정의 파일 생성 대상
   "exclude": ["node_modules", "dist"] // 제외할 경로
 }
