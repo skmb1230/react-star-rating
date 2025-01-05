@@ -1,13 +1,24 @@
-import { useEffect, useState } from "react";
+import { CSSProperties, useEffect, useState } from "react";
 
 export interface StarRatingProps {
-  maxStars?: number; // 최대 별 개수
-  currentScore?: number; // 현재 점수
-  size?: number; // 별 크기
-  starEmptyColor?: string; // 빈 별 색상
-  starFillColor?: string; // 채운 별 색상
-  onClick?: (currentStar: number) => void; // 클릭 이벤트
-  isClickable?: boolean; // 클릭 가능 여부
+  /** 최대 별 개수 */
+  maxStars?: number;
+  /** 현재 점수 */
+  currentScore?: number;
+  /** 별 크기 */
+  size?: number;
+  /** 빈 별 색상 */
+  starEmptyColor?: string;
+  /** 채운 별 색상 */
+  starFillColor?: string;
+  /** 클릭 이벤트 */
+  onClick?: (currentStar: number) => void;
+  /** 클릭 가능 여부 */
+  isClickable?: boolean;
+  /** 컨테이너 스타일 */
+  containerStyle?: CSSProperties;
+  /** 별 스타일 */
+  starStyle?: CSSProperties;
 }
 
 export function StarRating({
@@ -18,6 +29,8 @@ export function StarRating({
   starFillColor = "#FF501B",
   onClick,
   isClickable = true,
+  containerStyle,
+  starStyle,
 }: StarRatingProps) {
   const [fillStar, setFillStar] = useState(currentScore);
 
@@ -33,25 +46,25 @@ export function StarRating({
     }
   };
 
-  const starSize = size * 0.75;
+  const starSize = size;
   const starGap = Math.floor(size / 4);
 
-  const containerStyle = {
+  const defaultContainerStyle: CSSProperties = {
     display: "inline-flex",
     gap: `${starGap}px`,
     height: `${size}px`,
     alignItems: "center",
   };
 
-  const starStyle = {
-    position: "relative" as "relative",
+  const defaultStarStyle: CSSProperties = {
+    position: "relative",
     width: starSize,
     height: starSize,
     cursor: isClickable ? "pointer" : "default",
   };
 
   const fillStyle = (fillPercentage: number) => ({
-    position: "absolute" as "absolute",
+    position: "absolute",
     top: 0,
     left: 0,
     width: `${fillPercentage}%`,
@@ -60,12 +73,12 @@ export function StarRating({
   });
 
   return (
-    <div style={containerStyle}>
+    <div style={{ ...defaultContainerStyle, ...containerStyle }}>
       {Array.from({ length: maxStars }, (_, index) => {
         const fillPercentage = fillStar >= index + 1 ? 100 : fillStar > index ? (fillStar - index) * 100 : 0;
 
         return (
-          <div key={index} style={starStyle} onClick={() => isClickable && handleStar(index)}>
+          <div key={index} style={{ ...defaultStarStyle, ...starStyle }} onClick={() => isClickable && handleStar(index)}>
             <svg xmlns="http://www.w3.org/2000/svg" width={starSize} height={starSize} viewBox="0 0 42 42">
               <path
                 d="M21.0139 33.4345L8.71768 39.8889L11.0666 26.2182L1.10526 16.5376L14.8519 14.5486L21 2.11111L27.1481 14.5486L40.8947 16.5376L30.9334 26.2182L33.2822 39.8889L21.0139 33.4345Z"
