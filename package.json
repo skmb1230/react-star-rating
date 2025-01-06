@@ -1,6 +1,6 @@
 {
   "name": "react-star-rating-test",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A customizable star rating component for React",
   "main": "dist/react-star-rating.cjs.js",
   "module": "dist/react-star-rating.es.js",
