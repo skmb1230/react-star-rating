@@ -1,6 +1,6 @@
 {
   "name": "react-star-rating-test",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A customizable star rating component for React",
   "main": "dist/react-star-rating.cjs.js",
   "module": "dist/react-star-rating.es.js",
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "serve": "serve dist"
   },
   "peerDependencies": {
     "react": "^18.0.0",
