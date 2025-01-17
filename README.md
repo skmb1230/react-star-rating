@@ -1,4 +1,4 @@
-# React Star Rating ⭐️
+# React Simple Star Rating ⭐️
 
 A customizable and lightweight star rating component for React. Perfect for implementing rating systems in your applications with ease.
 
