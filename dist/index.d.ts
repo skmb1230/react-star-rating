@@ -1,8 +1,10 @@
 import { CSSProperties } from 'react';
 
-export declare function StarRating({ maxStars, currentScore, size, starEmptyColor, starFillColor, onClick, isClickable, containerStyle, starStyle, }: StarRatingProps): any;
+export declare function StarRating({ variant, maxStars, currentScore, size, starEmptyColor, emptyOutlineColor, emptyOutlineFillColor, starFillColor, onClick, isClickable, containerStyle, starStyle, }: StarRatingProps): any;
 
 export declare interface StarRatingProps {
+    /** 변형 */
+    variant?: "fill" | "outline-fill";
     /** 최대 별 개수 */
     maxStars?: number;
     /** 현재 점수 */
@@ -11,6 +13,10 @@ export declare interface StarRatingProps {
     size?: number;
     /** 빈 별 색상 */
     starEmptyColor?: string;
+    /**  empty outline 색상 */
+    emptyOutlineColor?: string;
+    /** empty 별 색상 */
+    emptyOutlineFillColor?: string;
     /** 채운 별 색상 */
     starFillColor?: string;
     /** 클릭 이벤트 */
