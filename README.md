@@ -1,6 +1,7 @@
 # React Simple Star Rating ⭐️
 
-A customizable and lightweight star rating component for React. Perfect for implementing rating systems in your applications with ease.
+> **Compatible with React 18+**  
+> A customizable and lightweight star rating component for React. Perfect for implementing rating systems in your applications with ease.
 
 ## Features 🚀
 
@@ -13,8 +14,12 @@ A customizable and lightweight star rating component for React. Perfect for impl
 
 To install the package, run the following command:
 
-```tsx
+```bash
 npm install react-easy-star-rating
+
+yarn add react-easy-star-rating
+
+pnpm add react-easy-star-rating
 ```
 
 ## Usage 💡
@@ -26,7 +31,7 @@ import React from "react";
 import StarRating from "react-easy-star-rating";
 
 function App() {
-  return <StarRating maxStars={5} currentScore={3} size={30} onClick={(rating) => console.log(`Rated: ${rating}`)} />;
+  return <StarRating variant={"fill"} maxStars={5} currentScore={3} size={30} onClick={(rating) => console.log(`Rated: ${rating}`)} />;
 }
 
 export default App;
