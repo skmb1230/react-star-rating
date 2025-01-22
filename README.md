@@ -14,7 +14,7 @@ A customizable and lightweight star rating component for React. Perfect for impl
 To install the package, run the following command:
 
 ```tsx
-npm install react-star-rating-test
+npm install react-easy-star-rating
 ```
 
 ## Usage 💡
@@ -36,7 +36,7 @@ export default App;
 
 | Name                 | Type                            | Default     | Description                                         |
 | -------------------- | ------------------------------- | ----------- | --------------------------------------------------- |
-| **`variant`**        | `"fill""outline-fill"`          | `"fill`     | Variant of the stars                                |
+| **`variant`**        | `"fill" "outline-fill"`         | `"fill`     | Variant of the stars                                |
 | **`maxStars`**       | `number`                        | `5`         | Maximum number of stars.                            |
 | **`currentScore`**   | `number`                        | `0`         | Initial rating value (can be updated dynamically).  |
 | **`size`**           | `number`                        | `24`        | Size of each star in pixels.                        |
