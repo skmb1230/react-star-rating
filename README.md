@@ -23,7 +23,7 @@ Here's a basic example:
 
 ```ts
 import React from "react";
-import StarRating from "react-star-rating-test";
+import StarRating from "react-easy-star-rating";
 
 function App() {
   return <StarRating maxStars={5} currentScore={3} size={30} onClick={(rating) => console.log(`Rated: ${rating}`)} />;
