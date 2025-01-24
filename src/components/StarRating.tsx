@@ -33,7 +33,7 @@ export function StarRating({
   currentScore = 0,
   size = 24,
   starEmptyColor = "#D2D2D2",
-  emptyOutlineColor = "#191919",
+  emptyOutlineColor = "#D2D2D2",
   emptyOutlineFillColor = "transparent",
   starFillColor = "#FF501B",
   onClick,

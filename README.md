@@ -39,15 +39,18 @@ export default App;
 
 ## Props 🛠️
 
-| Name                 | Type                            | Default     | Description                                         |
-| -------------------- | ------------------------------- | ----------- | --------------------------------------------------- |
-| **`variant`**        | `"fill", "outline-fill"`        | `"fill"`    | Variant of the stars                                |
-| **`maxStars`**       | `number`                        | `5`         | Maximum number of stars.                            |
-| **`currentScore`**   | `number`                        | `0`         | Initial rating value (can be updated dynamically).  |
-| **`size`**           | `number`                        | `24`        | Size of each star in pixels.                        |
-| **`starEmptyColor`** | `string`                        | `"#D2D2D2"` | Color of the empty stars.                           |
-| **`starFillColor`**  | `string`                        | `"#FF501B"` | Color of the filled stars.                          |
-| **`onClick`**        | `(currentStar: number) => void` | `undefined` | Callback function triggered when a star is clicked. |
-| **`isClickable`**    | `boolean`                       | `true`      | Determines if the stars are clickable.              |
-| **`containerStyle`** | `CSSProperties`                 | `{}`        | Custom styles for the container wrapping the stars. |
-| **`starStyle`**      | `CSSProperties`                 | `{}`        | Custom styles for each star.                        |
+| Name                        | Type                            | Default     | Description                                         |
+| --------------------------- | ------------------------------- | ----------- | --------------------------------------------------- |
+| **`variant`**               | `"fill", "outline-fill"`        | `"fill"`    | Variant of the stars                                |
+| **`maxStars`**              | `number`                        | `5`         | Maximum number of stars.                            |
+| **`currentScore`**          | `number`                        | `0`         | Initial rating value (can be updated dynamically).  |
+| **`size`**                  | `number`                        | `24`        | Size of each star in pixels.                        |
+| **`size`**                  | `number`                        | `24`        | Size of each star in pixels.                        |
+| **`emptyOutlineColor`**     | `string`                        | `"#D2D2D2"` | outline color                                       |
+| **`emptyOutlineFillColor`** | `string`                        |             | outline filled stars color.                         |
+| **`starEmptyColor`**        | `string`                        | `"#D2D2D2"` | Color of the empty stars.                           |
+| **`starFillColor`**         | `string`                        | `"#FF501B"` | Color of the filled stars.                          |
+| **`onClick`**               | `(currentStar: number) => void` | `undefined` | Callback function triggered when a star is clicked. |
+| **`isClickable`**           | `boolean`                       | `true`      | Determines if the stars are clickable.              |
+| **`containerStyle`**        | `CSSProperties`                 | `{}`        | Custom styles for the container wrapping the stars. |
+| **`starStyle`**             | `CSSProperties`                 | `{}`        | Custom styles for each star.                        |
