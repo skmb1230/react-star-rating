@@ -47,12 +47,12 @@ export function StarRating({
     setFillStar(currentScore);
   }, [currentScore]);
 
-  const handleStar = (index: number) => {
-    if (onClick) {
-      onClick(index + 1);
-    } else {
-      setFillStar(index + 1);
+  const handleStar = (selectIndex: number) => {
+    if (!isClickable) {
+      return;
     }
+    setFillStar(selectIndex + 1);
+    onClick?.(selectIndex + 1);
   };
 
   const starSize = size;

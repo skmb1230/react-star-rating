@@ -1,5 +1,34 @@
 #!/bin/bash
 
+# 1. 버전 타입 선택 목록 출력
+echo "Select version type:"
+echo "1) Patch (e.g., 1.0.0 -> 1.0.1)"
+echo "2) Minor (e.g., 1.0.0 -> 1.1.0)"
+echo "3) Major (e.g., 1.0.0 -> 2.0.0)"
+echo -n "Enter your choice (1.Patch/2.Minor/3.Major): "
+
+# 2. 사용자 입력 받기
+read CHOICE
+
+# 3. 선택에 따라 버전 타입 설정
+case $CHOICE in
+  1)
+    VERSION_TYPE="patch"
+    ;;
+  2)
+    VERSION_TYPE="minor"
+    ;;
+  3)
+    VERSION_TYPE="major"
+    ;;
+  *)
+    echo -e "\033[31m❌ Invalid choice! Please select 1, 2, or 3.\033[0m"
+    exit 1
+    ;;
+esac
+
+echo -e "\033[34m🔄 Selected version type: $VERSION_TYPE\033[0m"
+
 # 1. 빌드 실행
 echo -e "\033[34m🔄 Running build process...\033[0m"
 npm run build

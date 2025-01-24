@@ -1,6 +1,6 @@
 {
   "name": "react-easy-star-rating",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A customizable star rating component for React",
   "main": "dist/react-star-rating.cjs.js",
   "module": "dist/react-star-rating.es.js",
