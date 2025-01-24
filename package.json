@@ -11,7 +11,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "serve": "serve dist"
+    "serve": "serve dist",
+    "release": "./tools/publish.sh"
   },
   "peerDependencies": {
     "react": "^18.0.0",
