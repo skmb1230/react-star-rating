@@ -634,7 +634,7 @@ function yr({
   currentScore: T = 0,
   size: R = 24,
   starEmptyColor: S = "#D2D2D2",
-  emptyOutlineColor: A = "#191919",
+  emptyOutlineColor: A = "#D2D2D2",
   emptyOutlineFillColor: O = "transparent",
   starFillColor: E = "#FF501B",
   onClick: f,
