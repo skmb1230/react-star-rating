@@ -1,6 +1,7 @@
 # React Simple Star Rating ⭐️
 
-> ![Zoom In/Out Demo](./src/assets/star-image.JPG)
+![Zoom In/Out Demo](./src/assets/star-image.JPG)
+
 > **Compatible with React 18+**  
 > A customizable and lightweight star rating component for React. Perfect for implementing rating systems in your applications with ease.
 
