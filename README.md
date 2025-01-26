@@ -1,5 +1,6 @@
 # React Simple Star Rating ⭐️
 
+> (./src/assets/star-image.JPG)
 > **Compatible with React 18+**  
 > A customizable and lightweight star rating component for React. Perfect for implementing rating systems in your applications with ease.
 
