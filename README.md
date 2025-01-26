@@ -35,7 +35,7 @@ import React from "react";
 import StarRating from "react-easy-star-rating";
 
 function App() {
-  return <StarRating variant={"fill"} maxStars={5} currentScore={3} size={30} onClick={(rating) => console.log(`Rated: ${rating}`)} />;
+  return <StarRating variant={"fill"} maxStars={5} currentScore={3.4} size={30} onClick={(rating) => console.log(`Rated: ${rating}`)} />;
 }
 
 export default App;
@@ -48,7 +48,6 @@ export default App;
 | **`variant`**               | `"fill", "outline-fill"`        | `"fill"`    | Variant of the stars                                |
 | **`maxStars`**              | `number`                        | `5`         | Maximum number of stars.                            |
 | **`currentScore`**          | `number`                        | `0`         | Initial rating value (can be updated dynamically).  |
-| **`size`**                  | `number`                        | `24`        | Size of each star in pixels.                        |
 | **`size`**                  | `number`                        | `24`        | Size of each star in pixels.                        |
 | **`emptyOutlineColor`**     | `string`                        | `"#D2D2D2"` | outline color                                       |
 | **`emptyOutlineFillColor`** | `string`                        |             | outline filled stars color.                         |
